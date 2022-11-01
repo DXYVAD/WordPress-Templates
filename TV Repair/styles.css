@@ -11,12 +11,12 @@ header {
     flex-direction: row;
     justify-content: space-around;
 }
-.header_right span {
+.headerRight span {
     position: relative;
     top: 5px;
     user-select: none;
 }
-.header_logo {
+.headerLogo {
     background-image: url(images/tobiz_logo_def_black.png);
     width: 200px;
     height: 90px;
@@ -37,14 +37,14 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
-a.nav_tel {
+a.navTel {
     font-weight: normal;
 }
-a.nav_tel:hover {
+a.navTel:hover {
     text-decoration: none;
     color: gray;
 }
-.site_language {
+.siteLanguage {
     margin-top: 15px;
     margin-left: 80%;
     display: flex;
@@ -52,42 +52,42 @@ a.nav_tel:hover {
     justify-content: space-around;
     align-items: center;
 }
-.site_language p {
+.siteLanguage p {
     font-weight: lighter;
     font-size: 14px;
 }
-.flag_rus, .flag_en, .rus_upper, .en_upper {
+.flagRus, .flagEn, .rusUpper, .enUpper {
     width: 28px;
     height: 28px;
     transition: opacity 250ms ease;
 }
-.flag_rus {
+.flagRus {
     background-image: url(images/russia.svg);
 }
-.flag_en {
+.flagEn {
     background-image: url(images/united-kingdom.svg);
 }
-.rus_upper, .en_upper {
+.rusUpper, .enUpper {
     z-index: 1;
     background-color: black;
     border-radius: 50%;
     opacity: 0%;
 }
-.rus_upper:hover, .en_upper:hover {
+.rusUpper:hover, .enUpper:hover {
     opacity: 7%;
 }
-.flag_rus:hover, .flag_en:hover {
+.flagRus:hover, .flagEn:hover {
     opacity: 70%;
 }
-#pop-up_form {
+#popUpForm {
     position: fixed;
     opacity: 0%;
 }
-#pop-up_form:target {
+#popUpForm:target {
     opacity: 100%;
     transition: 250ms ease;
 }
-#repair_announcement {
+#repairAnnouncement {
     background-image: url(images/fa9ead899dd722dcc759af3a94b82594.jpg);
     background-size: cover;
     background-position: center center;
@@ -96,12 +96,12 @@ a.nav_tel:hover {
     width: 100%;
     margin-top: -35px;
 }
-.repair_shade {
+.repairShade {
     background: rgba(0, 0, 0, 0.55);
     width: 100%;
     height: 100%;
 }
-#repair_announcement h1, #repair_announcement h2, #repair_announcement p {
+#repairAnnouncement h1, #repairAnnouncement h2, #repairAnnouncement p {
     opacity: 1;
     color: white;
     font-weight: normal;
@@ -110,21 +110,21 @@ a.nav_tel:hover {
     position: relative;
     left: 370px;
 }
-#repair_announcement h2, #repair_announcement p {
+#repairAnnouncement h2, #repairAnnouncement p {
     font-weight: lighter;
     bottom: 30px;
 }
-#repair_announcement h1 {
+#repairAnnouncement h1 {
     font-size: 54px;
     padding-top: 120px;
 }
-#repair_announcement h2 {
+#repairAnnouncement h2 {
     font-size: 30px;
 }
-#repair_announcement p {
+#repairAnnouncement p {
     font-size: 20px;
 }
-#repair_announcement a.pop-up_open {
+#repairAnnouncement a.popUpOpen {
     background-color: rgb(71, 90, 100);
     box-shadow: rgb(41 60 70) 0px 0.25em 0px 0.01em;
     font-size: 20px;
@@ -136,7 +136,7 @@ a.nav_tel:hover {
     font-weight: lighter;
     transition: 250ms ease;
 }
-#repair_announcement a.pop-up_open:hover {
+#repairAnnouncement a.popUpOpen:hover {
     box-shadow: none;
     transition: 250ms ease;
 }
@@ -146,22 +146,167 @@ a.nav_tel:hover {
 #about {
     
 }
-.about_main {
+.aboutMain {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
     height: 800px;
 }
-.about_img {
+.aboutImg {
     background-image: url(images/08171b8e9d26b33d7d814bdb250f92e5.jpg);
     width: 660px;
     height: 500px;
     margin-top: 120px;
 }
-.about_desc {
-    width: 500px;
+.aboutDesc {
+    width: 515px;
     height: 550px;
     background-color: #F2F2F2;
     margin-top: 70px;
+}
+.aboutDesc h2 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-top: 130px;
+    margin-left: 50px;
+}
+.aboutDesc p {
+    position: relative;
+    top: 20px;
+    font-size: 19px;
+    font-weight: lighter;
+    margin-left: 50px;
+    text-align: left;
+    width: 400px;
+}
+.aboutDesc a.popUpOpen {
+    text-transform: uppercase;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(71, 90, 100);
+    box-shadow: rgb(41 60 70) 0px 0.25em 0px 0.01em;
+    padding: 10px 40px;
+    transition: 250ms ease;
+}
+.aboutDesc a.popUpOpen:hover {
+    box-shadow: none;
+    transition: 250ms ease;
+}
+.aboutIcons {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.aboutSVG {
+    margin: 0 auto;
+    width: 128px;
+    height: 128px;
+}
+.aboutIco1 {
+    background-image: url(images/corrector.svg);
+}
+.aboutIco2 {
+    background-image: url(images/021-free.svg);
+}
+.aboutIco3 {
+    background-image: url(images/coffee-cup.svg);
+}
+.aboutIco4 {
+    background-image: url(images/dollar-bill.svg);
+}
+.aboutIconsBlock {
+    width: 230px;
+}
+.aboutIconsBlock h2 {
+    font-weight: lighter;
+    text-align: center;
+}
+.aboutIconsBlock p {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 17px;
+    line-height: 25px;
+}
+.advantagesShade {
+    margin-top: 80px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.advantagesContent {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.advantagesFirstTitle, .advantagesContent h1 {
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+.advantagesFirstTitle {
+    color: gray;
+    font-size: 17px;
+}
+.advantagesContent h1 {
+    font-size: 48px;
+    margin-top: -15px;
+}
+.advantagesPlates {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.advantagesPlatesChild {
+    background-color: white;
+    padding: 25px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+.advantagesPlatesChild:nth-child(2n) {
+    margin-right: 0;
+}
+.advantagesPlatesChild h3 {
+    font-size: 22px;
+    font-weight: 400;
+}
+.advantagesPlatesChild p {
+    width: 530px;
+    color: #656565;
+}
+#workStages > h3, #workStages > h1 {
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-align: center;
+}
+#workStages > h3 {
+    color: #A9A9A9;
+    margin-top: 70px;
+}
+#workStages > h1 {
+    color: #444444;
+    font-size: 48px;
+    margin-top: -15px;
+}
+.stagesStep {
+    display: inline;
+}
+.stagesBetween {
+    border: 10px solid black;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.stagesLine {
+    content: normal;
+    margin-left: 20px;
+    border-left: 1px solid black;
+    width: 0;
+    height: 100px;
 }
