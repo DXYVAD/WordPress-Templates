@@ -394,45 +394,77 @@ a.navTel:hover {
     flex-direction: column;
     margin-top: 80px;
 }
-.spoilerBody, .spoilerContent {
+.spoiler {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    border-radius: 7px;
     margin: 0 auto;
+    margin-bottom: 30px;
     width: 60%;
     background-color: white;
     box-shadow: rgb(17 17 26 / 5%) 0 4px 16px, rgb(17 17 26 / 5%) 0 8px 32px;
     padding: 12px 40px 12px 25px;
-    
 }
-.spoilerBody {
+details summary {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 20px;
-    font-size: 20px;
-    border-radius: 7px 7px 0 0;
+    align-items: center;
+    list-style-type: none;
+}
+details[open] summary {
+    list-style-type: none;
 }
 .spoilerTitle {
+    width: 1130px;
     font-weight: lighter;
-}
-.spoilerButton {
-
-}
-.spoilerButtonClose {
-
-}
-.spoilerContent {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 30px;
-    border-radius: 0 0 7px 7px;
-    z-index: -1;
+    white-space: nowrap;
 }
 .spoilerImage {
     width: 400px;
     height: 300px;
     background-size: cover;
     border-radius: 7px;
+}
+.spoilerImage1 {
+    background-image: url(c88733b80d093f37441b9b508b213759.jpg);
+}
+.spoilerContent {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-radius: 0 0 7px 7px;
+    opacity: 0%;
+    transition: opacity 1s ease 500ms;
+}
+.spoilerText {
+    width: calc(100% - 440px);
+}
+.spoilerButton {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #333;
+    color: white;
+    transition: transform 250ms ease;
+}
+.spoilerButtonIco {
+    position: relative;
+    left: 7.5px;
+}
+details summary:hover {
+    cursor: pointer;
+}
+details[open] summary .spoilerButton {
+    transform: rotate(0.125turn);
+}
+details[open] .spoilerContent {
+    opacity: 100%;
 }
 .spoilerImage1 {
     background-image: url(images/c88733b80d093f37441b9b508b213759.jpg);
@@ -454,4 +486,8 @@ a.navTel:hover {
 }
 .spoilerText {
     width: calc(100% - 440px);
+}
+.spoilerText p, .spoilerText li {
+    font-weight: lighter;
+    font-size: 18px;
 }
