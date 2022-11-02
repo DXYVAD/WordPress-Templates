@@ -143,9 +143,6 @@ a.navTel:hover {
 #about, #advantages {
     background-image: url(images/natural-paper.png);
 }
-#about {
-    
-}
 .aboutMain {
     display: flex;
     flex-direction: row;
@@ -294,19 +291,167 @@ a.navTel:hover {
     font-size: 48px;
     margin-top: -15px;
 }
+.stages {
+    padding-bottom: 100px;
+}
 .stagesStep {
-    display: inline;
+    display: flex;
+    position: relative;
+    left: 470px;
+    top: 20px;
+}
+.stagesStep:not(:first-child) {
+    margin-top: -80px;
+}
+.stagesStep h3 {
+    font-size: 20px;
+}
+.stagesStep h2 {
+    font-size: 26px;
+    font-weight: lighter;
+}
+.stagesStep p {
+    font-weight: lighter;
 }
 .stagesBetween {
-    border: 10px solid black;
-    width: 15px;
-    height: 15px;
+    border: 12px solid black;
+    width: 17px;
+    height: 17px;
     border-radius: 50%;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+    top: 15px;
 }
 .stagesLine {
     content: normal;
     margin-left: 20px;
     border-left: 1px solid black;
     width: 0;
-    height: 100px;
+    height: 85px;
+    margin-top: 5px;
+    margin-bottom: 24px;
+    position: relative;
+    left: 568px;
+    bottom: 28px;
+}
+#reward {
+    background-color: rgba(0, 0, 0, 0.025);
+}
+#reward h3, #reward h1 {
+    font-weight: 500;
+    text-align: center;
+}
+#reward h3 {
+    padding-top: 90px;
+    color: #A9A9A9;
+    letter-spacing: 5px;
+}
+#reward h1 {
+    color: #444444;
+    font-size: 48px;
+    margin-top: -15px;
+}
+#reward p {
+    position: relative;
+    bottom: 10px;
+    text-indent: 30px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 22px;
+    width: 890px;
+    font-weight: lighter;
+}
+.rewardPic {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+.rewardPic img {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+.programTitle h3, .programTitle h1 {
+    text-align: center;
+    margin-top: 120px;
+    font-weight: 500;
+}
+.programTitle h3 {
+    color: #A9A9A9;
+    letter-spacing: 5px;
+    font-size: 17px;
+}
+.programTitle h1 {
+    color: #444444;
+    font-size: 48px;
+    margin-top: -15px;
+}
+.spoilerFamily {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+.spoilerBody, .spoilerContent {
+    margin: 0 auto;
+    width: 60%;
+    background-color: white;
+    box-shadow: rgb(17 17 26 / 5%) 0 4px 16px, rgb(17 17 26 / 5%) 0 8px 32px;
+    padding: 12px 40px 12px 25px;
+    
+}
+.spoilerBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 7px 7px 0 0;
+}
+.spoilerTitle {
+    font-weight: lighter;
+}
+.spoilerButton {
+
+}
+.spoilerButtonClose {
+
+}
+.spoilerContent {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-radius: 0 0 7px 7px;
+    z-index: -1;
+}
+.spoilerImage {
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    border-radius: 7px;
+}
+.spoilerImage1 {
+    background-image: url(images/c88733b80d093f37441b9b508b213759.jpg);
+}
+.spoilerImage2 {
+    background-image: url(images/8efc3cebeefc75bc05add0f837058167.jpeg);
+}
+.spoilerImage3 {
+    background-image: url(images/44ca66b65f3811e460c305af32aef343.jpg);
+}
+.spoilerImage4 {
+    background-image: url(images/3f19d943998fc619c905e4731ba484fd.jpg);
+}
+.spoilerImage5 {
+    background-image: url(images/964680dcf83f104438cf9bb85186d6a4.jpg);
+}
+.spoilerImage6 {
+    background-image: url(images/afa164b3e285d9f9b0a92aa1564fc1ac.jpg);
+}
+.spoilerText {
+    width: calc(100% - 440px);
 }
