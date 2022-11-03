@@ -563,3 +563,43 @@ details[open] .spoilerContent {
     width: 55%;
     margin: 30px auto;
 }
+.partnersList {
+    position: relative;
+    top: 230px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 58%;
+    height: 100px;
+}
+.partner {
+    width: 150px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: grayscale(100%) invert(100%);
+    transition: filter 250ms ease;
+}
+.partner:hover {
+    filter: grayscale(0%) invert(0%);
+    transition: filter 250ms ease;
+}
+.fossilFree {
+    background-image: url(images/logo_6.png);
+}
+.fpuu {
+    background-image: url(images/logo_7.png);
+}
+.paypal {
+    background-image: url(images/logo_8.png);
+}
+.smokeFree {
+    background-image: url(images/logo_9.png);
+    margin-top: -15px;
+}
+.texet {
+    background-image: url(images/logo_10.png);
+    margin-top: 15px;
+}
