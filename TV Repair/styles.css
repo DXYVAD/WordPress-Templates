@@ -407,6 +407,9 @@ a.navTel:hover {
     box-shadow: rgb(17 17 26 / 5%) 0 4px 16px, rgb(17 17 26 / 5%) 0 8px 32px;
     padding: 12px 40px 12px 25px;
 }
+details {
+    width: 100%;
+}
 details summary {
     display: flex;
     flex-direction: row;
@@ -418,7 +421,6 @@ details[open] summary {
     list-style-type: none;
 }
 .spoilerTitle {
-    width: 1130px;
     font-weight: lighter;
     white-space: nowrap;
 }
@@ -602,4 +604,48 @@ details[open] .spoilerContent {
 .texet {
     background-image: url(images/logo_10.png);
     margin-top: 15px;
+}
+#services > h1, #services > h2 {
+    text-align: center;
+}
+#services > h1 {
+    font-size: 48px;
+    margin-top: 70px;
+    font-weight: 500;
+}
+#services > h2 {
+    font-size: 24px;
+    font-weight: lighter;
+    margin-top: -10px;
+}
+#services > h2 > span {
+    font-weight: 500;
+}
+.servicesContent {
+    width: 60%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.servicesForm {
+    width: calc(36% - 60px);
+}
+.servicesWho {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.servicesWhoBlock h2, .servicesWhoBlock p {
+    text-align: left;
+    font-weight: lighter;
+}
+.servicesWhoBlock h2 {
+    font-size: 22px;
+}
+.servicesWhoBlock p {
+    font-size: 17px;
+}
+.servicesBlock1::before {
+    content: url();
 }
