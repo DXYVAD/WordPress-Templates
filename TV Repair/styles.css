@@ -829,6 +829,7 @@ details[open] .spoilerContent {
     color: #333333;
 }
 #reviews {
+    display: inline-block;
     background-image: url(images/813c41c60127fc68020ae52360c125ea.jpg);
     background-size: cover;
     background-position: center center;
@@ -842,10 +843,13 @@ details[open] .spoilerContent {
 }
 .reviewsBody {
     background-color: white;
-    margin: 90px auto 70px;
+    margin: 0 auto; 
     width: 940px;
-    padding: 40px;
     overflow: hidden;
+}
+.reviewsCarousel {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 90px auto 70px; 
 }
